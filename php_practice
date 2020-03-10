@@ -1,0 +1,74 @@
+<html>
+<html>
+<head>
+
+</head>
+<body>
+<?php
+// https://web.njit.edu/~dcg24/PHP_Practice/ 
+// I do not know how to upload this notepad file into AFS
+<?php
+$date =  date('Y-m-d', time());
+echo "The value of \$date: ".$date."<br>";
+$tar = "2017/05/24";
+echo "The value of \$tar: ".$tar."<br>";
+$year = array("2012", "396", "300","2000", "1100", "1089");
+echo "The value of \$year: ";
+print_r($year);
+?>
+<h5>Q1</h5>
+<?php
+$dat = str_replace("-", "/", $date);
+echo $dat;
+?>
+<h5>Q2</h5>
+<?php
+if ($date and $tar >0) {
+	echo "the future";
+} elseif ($date and $tar <0) {
+	echo "the past";
+} elseif ($date and $tar =0) {
+	"Oops";
+}
+?>
+<h5>Q3</h5>
+<?php
+echo strpos($dat, "/");
+echo (' ');
+echo strrpos($dat, "/");
+?>
+<h5>Q4</h5>
+<?php
+echo str_word_count($dat);
+?>
+<h5>Q5</h5>
+<?php
+$hello = "hello IS218";
+echo ord($hello);
+?>
+<h5>Q6</h5>
+<?php
+$hw = "this is homework for php basics";
+echo strlen($hw);
+?>
+<h5>Q7</h5>
+<?php
+echo substr($date, -2);
+?>
+<h5>Q8</h5>
+<?php
+print_r (str_split($dat));
+?>
+<h5>Q9</h5>
+<?php
+foreach ($year as $year) {
+	if ($year % 4 == 0) {
+		echo "Yes\n";
+	}
+	else {
+		echo "no\n";
+	}
+}
+?>
+</body>
+</html>
